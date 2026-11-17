@@ -1,0 +1,91 @@
+{
+  "config": {
+    "input_path": "D:\\Daily Data Groww\\data",
+    "output_dir": "D:\\RSI_SuperTrand\\rsi_supertrend_backtester_project\\trading_project\\artifacts\\nifty_phase1",
+    "file_globs": [
+      "*_daily_candles.csv"
+    ],
+    "recursive": false,
+    "column_mapping": {
+      "date": [
+        "date",
+        "datetime",
+        "timestamp",
+        "time"
+      ],
+      "symbol": [
+        "symbol",
+        "ticker",
+        "security",
+        "instrument"
+      ],
+      "open": [
+        "open",
+        "o"
+      ],
+      "high": [
+        "high",
+        "h"
+      ],
+      "low": [
+        "low",
+        "l"
+      ],
+      "close": [
+        "close",
+        "c",
+        "ltp"
+      ],
+      "volume": [
+        "volume",
+        "vol",
+        "qty",
+        "quantity"
+      ],
+      "turnover": [
+        "turnover",
+        "value",
+        "traded_value"
+      ],
+      "sector": [
+        "sector",
+        "industry"
+      ],
+      "adjusted_close": [
+        "adjusted_close",
+        "adj_close"
+      ],
+      "corporate_action_verified": [
+        "corporate_action_verified",
+        "adjustment_verified"
+      ]
+    },
+    "symbol_from_filename_suffixes": [
+      "_daily_candles",
+      "-daily-candles",
+      "_day",
+      "-day",
+      "_daily",
+      "-daily"
+    ],
+    "duplicate_policy": "last",
+    "extreme_move_threshold": 0.3,
+    "exclude_uncertain_intervals": true,
+    "index_symbols": [
+      "NIFTY50",
+      "NIFTY500"
+    ],
+    "universe_membership_path": null,
+    "membership_symbol_column": "symbol",
+    "membership_start_column": "start_date",
+    "membership_end_column": "end_date"
+  },
+  "artifacts": {
+    "normalized_path": "D:\\RSI_SuperTrand\\rsi_supertrend_backtester_project\\trading_project\\artifacts\\nifty_phase1\\normalized_ohlcv.parquet",
+    "quality_report_path": "D:\\RSI_SuperTrand\\rsi_supertrend_backtester_project\\trading_project\\artifacts\\nifty_phase1\\data_quality_report.json",
+    "quality_by_symbol_path": "D:\\RSI_SuperTrand\\rsi_supertrend_backtester_project\\trading_project\\artifacts\\nifty_phase1\\quality_by_symbol.csv",
+    "manifest_path": "D:\\RSI_SuperTrand\\rsi_supertrend_backtester_project\\trading_project\\artifacts\\nifty_phase1\\source_manifest.json",
+    "duckdb_path": "None",
+    "rows_written": "4446585"
+  }
+}

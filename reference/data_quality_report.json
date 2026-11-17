@@ -1,0 +1,43 @@
+{
+  "date_coverage": {
+    "first": "2015-01-01",
+    "last": "2026-10-16"
+  },
+  "duplicate_policy": "last",
+  "duplicate_rows_detected": 0,
+  "excluded_invalid_rows": 1,
+  "generated_at_utc": "2026-10-20T06:42:58.602280+00:00",
+  "index_coverage": {
+    "missing": [
+      "NIFTY50",
+      "NIFTY500"
+    ],
+    "present": [],
+    "requested": [
+      "NIFTY50",
+      "NIFTY500"
+    ]
+  },
+  "input_files": 2636,
+  "limitations": [
+    "Raw source files are not modified; hashes are recorded in source_manifest.json.",
+    "Extreme close-to-close moves without verified corporate-action data are flagged as uncertain, not adjusted.",
+    "No missing OHLC sessions are fabricated.",
+    "Rows after 2025 are retained as source data but must not enter the frozen 2025 holdout evaluation."
+  ],
+  "membership_available": false,
+  "missing_sessions_within_symbol_spans": 145146,
+  "normalized_rows": 4446585,
+  "phase": 1,
+  "raw_rows": 4446586,
+  "research_window_coverage": {
+    "contains_post_holdout_rows": true,
+    "has_full_requested_history": true,
+    "requested_final_holdout_end": "2025-12-31",
+    "requested_start": "2015-01-01"
+  },
+  "schema_errors": [],
+  "survivorship_bias_warning": true,
+  "symbols": 2636,
+  "uncertain_corporate_action_rows": 377
+}

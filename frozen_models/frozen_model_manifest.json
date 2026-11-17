@@ -1,0 +1,170 @@
+{
+  "legacy_warning": "Historical legacy artifact only; not production-approved. See README.md.",
+  "generated_at_utc": "2026-11-14T05:45:40.970655+00:00",
+  "normalized_path": "D:\\RSI_SuperTrand\\rsi_supertrend_backtester_project\\trading_project\\artifacts\\nifty_phase1\\normalized_ohlcv.parquet",
+  "normalized_sha256": "145f8cc9191f79aa1f935781644cdf174b861a3119fb10018c2d518f7c8b02a0",
+  "feature_order": [
+    "body_lag1",
+    "body_lag2",
+    "body_lag3",
+    "body_lag4",
+    "body_lag5",
+    "range_lag1",
+    "range_lag2",
+    "range_lag3",
+    "range_lag4",
+    "range_lag5",
+    "return_lag1",
+    "return_lag2",
+    "return_lag5",
+    "return_lag10",
+    "return_lag20",
+    "volume_ratio1",
+    "volume_ratio5",
+    "avg_abs_body10",
+    "avg_range10",
+    "prior_close_vs_sma5",
+    "prior_close_vs_sma20",
+    "prior_close_vs_high20",
+    "prior_close_vs_low20",
+    "green_count5",
+    "red_count5",
+    "prior_up_hit_rate20",
+    "prior_down_hit_rate20",
+    "prior_up_excursion20",
+    "prior_down_excursion20",
+    "avg_range20",
+    "max_range20",
+    "log_price_prior",
+    "log_volume20",
+    "weekday"
+  ],
+  "model_family_selected_from_2019_validation": {
+    "intraday_high": "lightgbm_l1",
+    "intraday_low": "lightgbm_l1"
+  },
+  "sample_modulus": 20,
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "versions": {
+    "lightgbm": "4.7.0",
+    "duckdb": "1.5.6",
+    "pandas": "2.3.3",
+    "numpy": "2.4.1",
+    "sklearn": "1.9.0"
+  },
+  "artifacts": [
+    {
+      "kind": "walk_forward",
+      "target": "intraday_high",
+      "test_year": 2020,
+      "path": "walk_forward\\intraday_high_2020.joblib",
+      "rows": 69982
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_high",
+      "test_year": 2021,
+      "path": "walk_forward\\intraday_high_2021.joblib",
+      "rows": 86914
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_high",
+      "test_year": 2022,
+      "path": "walk_forward\\intraday_high_2022.joblib",
+      "rows": 104901
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_high",
+      "test_year": 2023,
+      "path": "walk_forward\\intraday_high_2023.joblib",
+      "rows": 124737
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_high",
+      "test_year": 2024,
+      "path": "walk_forward\\intraday_high_2024.joblib",
+      "rows": 146017
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_high",
+      "test_year": 2025,
+      "path": "walk_forward\\intraday_high_2025.joblib",
+      "rows": 169732
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_high",
+      "test_year": 2026,
+      "path": "walk_forward\\intraday_high_2026.joblib",
+      "rows": 195941
+    },
+    {
+      "kind": "live",
+      "target": "intraday_high",
+      "training_cutoff": "2026-10-16",
+      "path": "live\\intraday_high_through_2026-10-16.joblib",
+      "rows": 219057
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_low",
+      "test_year": 2020,
+      "path": "walk_forward\\intraday_low_2020.joblib",
+      "rows": 69982
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_low",
+      "test_year": 2021,
+      "path": "walk_forward\\intraday_low_2021.joblib",
+      "rows": 86914
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_low",
+      "test_year": 2022,
+      "path": "walk_forward\\intraday_low_2022.joblib",
+      "rows": 104901
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_low",
+      "test_year": 2023,
+      "path": "walk_forward\\intraday_low_2023.joblib",
+      "rows": 124737
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_low",
+      "test_year": 2024,
+      "path": "walk_forward\\intraday_low_2024.joblib",
+      "rows": 146017
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_low",
+      "test_year": 2025,
+      "path": "walk_forward\\intraday_low_2025.joblib",
+      "rows": 169732
+    },
+    {
+      "kind": "walk_forward",
+      "target": "intraday_low",
+      "test_year": 2026,
+      "path": "walk_forward\\intraday_low_2026.joblib",
+      "rows": 195941
+    },
+    {
+      "kind": "live",
+      "target": "intraday_low",
+      "training_cutoff": "2026-10-16",
+      "path": "live\\intraday_low_through_2026-10-16.joblib",
+      "rows": 219057
+    }
+  ]
+}
